@@ -23,6 +23,11 @@ a:hover, a:active {
     text-decoration: underline; 
     color:rgb(0, 38, 207) }
 
+.center {
+  width: 100%;  
+  max-width: 1000px;
+  margin-inline: auto;
+}
 
   .topnav {
     overflow: hidden;
@@ -41,6 +46,7 @@ a:hover, a:active {
     float: right;
     color: #f2f2f2;
     text-align: center;
+    vertical-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -55,7 +61,7 @@ a:hover, a:active {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 11px 0px;
     margin: 0;
     text-decoration: none;
     font-size: 28px;
