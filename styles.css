@@ -89,3 +89,44 @@ h5 {
   box-shadow: 0 8px 16px 0 rgba(06, 90, 183, 0.2);
 }
 
+
+
+
+
+
+
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  
+  background-color: #555;
+  color: #fff;
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+
+  position: fixed;
+  z-index: 1;
+  left:30%;
+  right:30%;
+  top:20%;
+  bottom:50%;
+}
+
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+}

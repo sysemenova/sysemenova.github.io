@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            let test1 = (document.getElementById("textbox1").value == 2);
+            let test2 = (document.getElementById("textbox2").value == 145);
+            let test3 = (document.getElementById("textbox3").value == 260);
+            if (test1 && test2 && test3) {
+                var popup = document.getElementById("lovepopup");
+                popup.classList.toggle("show"); 
+            } else {
+                let message = "Incorrect, try again! ";
+                message += (!test1 ? "1 " : "");
+                message += (!test2 ? "2 " : "");
+                message += (!test3 ? "3 " : "");
+                message += ((!test1 + !test2 + !test3) == 1 ? "is incorrect" : "are incorrect.");
+                alert(message)
+            }
+        }
+        </script>
+</head>
+<body>
+
+	<div class="topnav">
+		<div class="center" style="padding-top:5px">
+			<p>Elan Semenova > Graduation Puzzles</p>
+			<a href="../other.html">other</a>
+			<a href="../research.html">research</a>
+			<a href="../index.html">home</a>
+		</div>
+	</div>
+
+	<div class="center">
+
+        <p> Use the crane's hints to find the numbers associated with the three puzzles: Bethany's riddle, glowing cards, and binary cipher.</p>
+        <br/>
+		<p>1. <input id="textbox1" type="number"></p>
+        <p>2. <input id="textbox2" type="number"></p>
+        <p>3. <input id="textbox3" type="number"></p>
+
+        <p class="popup">
+            <button onclick="myFunction()">Submit</button>
+            <span class="popuptext" id="lovepopup">
+                2 → I <br/> 145 → LOVE <br/> 260 → YALL
+                <br/><br/> I LOVE YALL
+                <br/><br/> You are all wonderful and have made uni so so special. I'm insanely glad to have 
+                gotten to know you guys, and know we'll stay friends for a Long time.
+                <br/><br/> (Yes that was the secret message. Bethany is just too prideful.)
+            </span>
+        </p>
+
+	</div>
+
+</body>
+</html>
